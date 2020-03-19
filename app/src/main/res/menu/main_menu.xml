@@ -15,4 +15,8 @@
         android:title="Account"
         android:id="@+id/account"
         />
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        />
 </menu>

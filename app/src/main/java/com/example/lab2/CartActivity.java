@@ -32,9 +32,17 @@ public class CartActivity extends AppCompatActivity {
             case R.id.account:
                 openAccountMenu();
                 return true;
+            case R.id.settings:
+                openSettingsMenu();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void openSettingsMenu() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     public void openCatalogMenu() {

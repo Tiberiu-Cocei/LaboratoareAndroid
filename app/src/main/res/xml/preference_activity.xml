@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="theme_preference"
+        android:title="Dark Theme"
+        android:visibility="visible"
+        tools:visibility="visible" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="test_switch_1"
+        android:title="Test Switch"
+        android:visibility="visible"
+        tools:visibility="visible" />
+</PreferenceScreen>
