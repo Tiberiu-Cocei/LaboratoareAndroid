@@ -16,6 +16,10 @@
         android:id="@+id/account"
         />
     <item
+        android:title="Sensor"
+        android:id="@+id/sensor"
+        />
+    <item
         android:title="Settings"
         android:id="@+id/settings"
         />

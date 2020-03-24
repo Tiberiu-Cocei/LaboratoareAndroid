@@ -52,9 +52,17 @@ public class SettingsActivity extends AppCompatActivity {
                 return true;
             case R.id.settings:
                 return true;
+            case R.id.sensor:
+                openSensorMenu();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void openSensorMenu() {
+        Intent intent = new Intent(this, SensorActivity.class);
+        startActivity(intent);
     }
 
     public void openCatalogMenu() {

@@ -35,9 +35,17 @@ public class CartActivity extends AppCompatActivity {
             case R.id.settings:
                 openSettingsMenu();
                 return true;
+            case R.id.sensor:
+                openSensorMenu();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void openSensorMenu() {
+        Intent intent = new Intent(this, SensorActivity.class);
+        startActivity(intent);
     }
 
     public void openSettingsMenu() {
