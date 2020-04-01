@@ -61,9 +61,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sensor:
                 openSensorMenu();
                 return true;
+            case R.id.camera:
+                openCameraMenu();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void openCameraMenu(){
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
     }
 
     public void openSensorMenu() {
